@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand-name {
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* Чорний колір тексту */
+}
+
+#brand-name:hover {
+    color: grey; /* Змінюємо колір при наведенні */
+    transition: color 0.3s ease-in-out; /* Плавна анімація зміни кольору */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Видаляємо підкреслення */
+    color: black;          /* Чорний колір тексту */
+    font-weight: bold;     /* Жирний текст */
+}
+
+nav ul li a:hover {
+    color: grey;           /* Зміна кольору при наведенні */
+    transition: color 0.3s ease-in-out; /* Плавна анімація */
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Відступ між стовпчиками */
+}
+
+
+.photo-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Відступ між зображеннями */
+}
+
+.photo-column img {
+    max-width: 400px; /* Максимальна ширина фото */
+    width: 100%; /* Автоматично зменшує ширину зображення, якщо воно більше за max-width */
+    height: auto; /* Зберігає пропорції зображення */
+}
+
+.glitch {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: black;
+    overflow: hidden; /* Додаємо це для коректного відображення анімації */
+  }
+  
+  .glitch:before,
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    color: black;
+    overflow: hidden;
+  }
+  
+  .glitch:hover:before {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: glitch-effect 2s infinite;
+  }
+  
+  .glitch:hover:after {
+    left: -2px;
+    text-shadow: 1px 0 rgb(23, 22, 22);
+    animation: glitch-effect 2s infinite;
+  }
