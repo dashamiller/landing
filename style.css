@@ -37,6 +37,10 @@ nav ul li a {
     color: black;          /* Чорний колір тексту */
     font-weight: bold;     /* Жирний текст */
 }
+nav ul li a.active {
+    color: #555; /* Або будь-який колір, який ви хочете використати для активного стану */
+    font-weight: bold;
+}
 
 nav ul li a:hover {
     color: grey;           /* Зміна кольору при наведенні */
@@ -80,18 +84,18 @@ nav ul li a:hover {
     content: attr(data-text);
     position: absolute;
     top: 0;
-    color: black;
+    color: rgb(98, 193, 244);
     overflow: hidden;
   }
   
   .glitch:hover:before {
     left: 2px;
-    text-shadow: -1px 0 red;
+    text-shadow: -1px 0 rgb(249, 90, 217);
     animation: glitch-effect 2s infinite;
   }
   
   .glitch:hover:after {
     left: -2px;
-    text-shadow: 1px 0 rgb(23, 22, 22);
+    text-shadow: 1px 0 rgb(193, 56, 191);
     animation: glitch-effect 2s infinite;
   }
