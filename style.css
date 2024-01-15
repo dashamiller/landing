@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 body {
     background-color: white;
     color: black;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -14,12 +15,12 @@ header {
     font-weight: bold;
     font-size: 24px;
     cursor: pointer;
-    color: black; /* Чорний колір тексту */
+    color: black;
 }
 
 #brand-name:hover {
-    color: grey; /* Змінюємо колір при наведенні */
-    transition: color 0.3s ease-in-out; /* Плавна анімація зміни кольору */
+    color: grey;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul {
@@ -33,18 +34,19 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none; /* Видаляємо підкреслення */
-    color: black;          /* Чорний колір тексту */
-    font-weight: bold;     /* Жирний текст */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
+
 nav ul li a.active {
-    color: #555; /* Або будь-який колір, який ви хочете використати для активного стану */
+    color: #555;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: grey;           /* Зміна кольору при наведенні */
-    transition: color 0.3s ease-in-out; /* Плавна анімація */
+    color: grey;
+    transition: color 0.3s ease-in-out;
 }
 
 #content {
@@ -52,50 +54,76 @@ nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .gallery-container {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Відступ між стовпчиками */
+    gap: 40px;
 }
 
 
 .photo-column {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Відступ між зображеннями */
+    gap: 40px;
 }
 
 .photo-column img {
-    max-width: 400px; /* Максимальна ширина фото */
-    width: 100%; /* Автоматично зменшує ширину зображення, якщо воно більше за max-width */
-    height: auto; /* Зберігає пропорції зображення */
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }
 
-.glitch {
+
+#gif-background {
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW9tZmpqd292NHBzcDIwc21nc2M4eGNlYWFiY253NzFsZzA5Nzc5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4KihuqeuJEi9qLSM/giphy.gif);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+.photo-column {
     position: relative;
-    display: inline-block;
-    font-size: 24px;
-    color: black;
-    overflow: hidden; /* Додаємо це для коректного відображення анімації */
-  }
-  
-  .glitch:before,
-  .glitch:after {
-    content: attr(data-text);
+    width: 411px; 
+}
+
+.cover-image,
+.hover-image {
     position: absolute;
     top: 0;
-    color: rgb(98, 193, 244);
-    overflow: hidden;
-  }
-  
-  .glitch:hover:before {
-    left: 2px;
-    text-shadow: -1px 0 rgb(249, 90, 217);
-    animation: glitch-effect 2s infinite;
-  }
-  
-  .glitch:hover:after {
-    left: -2px;
-    text-shadow: 1px 0 rgb(193, 56, 191);
-    animation: glitch-effect 2s infinite;
-  }
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1.2s ease;
+}
+
+.hover-image {
+    opacity: 0;
+}
+
+.photo-column:hover .cover-image {
+    opacity: 0;
+}
+
+.photo-column:hover .hover-image {
+    opacity: 1;
+}
+.gallery-cover {
+cursor:default;
+
+}
