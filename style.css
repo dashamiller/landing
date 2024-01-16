@@ -66,6 +66,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    position: relative;
+    width: 411px; 
 }
 
 .photo-column img {
@@ -88,16 +90,6 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-
-
-
-
-
-.photo-column {
-    position: relative;
-    width: 411px; 
 }
 
 .cover-image,
@@ -145,8 +137,8 @@ cursor:default;
 .gallery-popup-item{
 /* max-width: 80%; */
 /* max-height: 80%; */
-max-height: 50%;
-max-width: 50%;
+max-height: 90%;
+max-width: 90%;
 }
 .gallery-popup .close-btn {
 cursor: pointer;

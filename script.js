@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
                     </div>
                 </div>
+            <div class="photo-column">
+                <div id="rubik" class="gallery-cover">
+                    <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
+                    <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
+                </div>
+            </div>
           
             `;
 // дістаємо елемент по якому будемо клікать
@@ -70,6 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
             contentContainer.innerHTML = `
              <div class="gallery-container">
                 <div class="photo-column">
+                  <div id="move" class="gallery-cover">
+                       <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
+                       <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
+                   </div>
+               </div>
+               <div class="photo-column">
                   <div id="move" class="gallery-cover">
                        <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
                        <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
