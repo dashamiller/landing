@@ -31,10 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             contentContainer.innerHTML = `
             <div class="gallery-container">
                 <div class="photo-column">
-                    <div id="rubik" class="gallery-cover">
-                        <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
-                        <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
-                    </div>
+                <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
+                <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
+            
                 </div>
             <div class="photo-column">
                 <div id="rubik" class="gallery-cover">
