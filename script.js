@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           
             `;
-// дістаємо елемент по якому будемо клікать
+            // дістаємо елемент по якому будемо клікать
             const rubikItem = document.getElementById('rubik');
             // обявляємо що будемо слухать клік (внутрощі функції будуть виконуватись на клік)
             rubikItem.addEventListener('click', function () {
@@ -52,12 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 // цьому щє нєвідімому елементу задаємо відімость (перетираючи дісплей нон дісплей флєксом)
                 rubikFolderToOpen.style.display = 'flex';
             });
-//============================
+            //============================
             // дстаємо елемент сірого попапа на данний момент з однуєю фотографією
             const rubikFolderToClose = document.getElementById('rubikFolder');
-// кажемо що будемо слухати клік (внутрощі функції будуть виконуватись на клік)
+            // кажемо що будемо слухати клік (внутрощі функції будуть виконуватись на клік)
             rubikFolderToClose.addEventListener('click', function (e) {
-            //    строчка магії - питай у чата джіпіті (з допомогою цієї функції розуміємо що клікнулі на пустоту)
+                //    строчка магії - питай у чата джіпіті (з допомогою цієї функції розуміємо що клікнулі на пустоту)
                 if (e.target === rubikFolderToClose) {
                     // нашому попапу (папочкє що дісталу двумя строчками вищє - задаємо дісплей нон)
                     rubikFolderToClose.style.display = 'none'; // Приховуємо галерею
@@ -69,47 +69,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
         else if (section === 'artProjects') {
             contentContainer.innerHTML = `
-             <div class="gallery-container">
-                <div class="photo-column">
-                  <div id="move" class="gallery-cover">
-                       <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
-                       <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
-                   </div>
-               </div>
-               <div class="photo-column">
-                  <div id="move" class="gallery-cover">
-                       <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
-                       <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
-                   </div>
-               </div>
-             </div>
+            <div class="gallery-container">
+            <div class="photo-column">
+                <div id="move" class="gallery-cover">
+                   <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
+                   <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
+                </div>
+
+                <div id="handOfGod" class="gallery-cover">
+                    <img src="photos/artProjects/handOfGod/cover.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
+                    <img src="photos/artProjects/handOfGod/1.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
+                </div>
+                
+            </div>
+
+            <div class="photo-column">
+                <div id="enterTheVoid" class="gallery-cover">
+                   <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
+                   <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
+                </div>
+           </div>
+         </div>
             `;
 
-           const moveItem = document.getElementById('move');
-           moveItem.addEventListener('click', function() {
-             const moveFolderToOpen = document.getElementById('moveFolder');
-             moveFolderToOpen.style.display = 'flex';
-           });
-           const moveFolderToClose = document.getElementById('moveFolder');
-           moveFolderToClose.addEventListener('click', function(e){
-            if (e.target === moveFolderToClose) {
-                moveFolderToClose.style.display = 'none';
-            }
-        });
+
+            const moveItem = document.getElementById('move');
+            moveItem.addEventListener('click', function () {
+                const moveFolderToOpen = document.getElementById('moveFolder');
+                moveFolderToOpen.style.display = 'flex';
+            });
+            const moveFolderToClose = document.getElementById('moveFolder');
+            moveFolderToClose.addEventListener('click', function (e) {
+                if (e.target === moveFolderToClose) {
+                    moveFolderToClose.style.display = 'none';
+                }
+            });
+
+            const enterTheVoidItem = document.getElementById('enterTheVoid');
+            enterTheVoidItem.addEventListener('click', function () {
+                const enterTheVoidFolderToOpen = document.getElementById('enterTheVoid')
+                enterTheVoidFolderToOpen.style.display = 'flex';
+            });
+            const enterTheVoidToClose = document.getElementById('enterTheVoid');
+            enterTheVoidToClose.addEventListener('click', function (e) {
+                if (e.target === enterTheVoidToClose) {
+                    enterTheVoidToClose.style.display = 'none'
+                }
+
+            });
+
+            const handOfGodItem = document.getElementById('handOfGod');
+            handOfGodItem.addEventListener('click', function () {
+                const handOfGodFolderToOpen = document.getElementById('handOfGod')
+                handOfGodFolderToOpen.style.display = 'flex';
+            });
+            const handOfGodToClose = document.getElementById('handOfGod');
+            handOfGodToClose.addEventListener('click', function (e) {
+                if (e.target === handOfGodToClose) {
+                    handOfGodToClose.style.display = 'none'
+                }
+
+            });
 
         }
-
         else if (section === 'commercial') {
             contentContainer.innerHTML = `
                 <div class="gallery-container">
-                    <div class="photo-column">
-                        <img src="photos/commercial/dasha.jpeg" alt="Commercial " loading="lazy">
-                    </div>
-
                     <div class="photo-column">
                         <img src="photos/commercial/IMG_7100.JPG" alt="Commercial 1" loading="lazy">
                         <img src="photos/commercial/IMG_7355.JPG" alt="Commercial 2" loading="lazy">
@@ -117,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="photo-column">
                         <img src="photos/commercial/IMG_7099.JPG" alt="Commercial 3" loading="lazy">
                         <img src="photos/commercial/IMG_7338.JPG" alt="Commercial 4" loading="lazy">
+                        <img src="photos/commercial/dasha.jpeg" alt="Commercial " loading="lazy">
                     </div>
                 </div>
             `;
