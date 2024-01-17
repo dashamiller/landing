@@ -2,7 +2,7 @@
 
 body {
     background-color: white;
-    color: black;
+    color: rgb(190, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -78,20 +78,27 @@ nav ul li a:hover {
 }
 
 
-#gif-background {
-    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW9tZmpqd292NHBzcDIwc21nc2M4eGNlYWFiY253NzFsZzA5Nzc5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4KihuqeuJEi9qLSM/giphy.gif);
 
+
+#gif-background {
+    /* background-image: url(photos/background-ezgif.com-video-to-gif-converter.gif); */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
+    /* background-position: center; */
+    /* opacity: 0.9; */
     height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* width: 100vw;
+    position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
     z-index: -1;
+ /* !!!проба нормально поставити гіфку!!!  */
+    width: 0vw;      
+    position: absolute;
+    left: 25%;
 }
+
+
 
 .cover-image,
 .hover-image {
@@ -173,6 +180,8 @@ nav ul li a:hover {
     font-size: 35px;
     color: white;
 }
+
+
 
 
 

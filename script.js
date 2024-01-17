@@ -136,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             page2.style.display = 'none'
             page3.style.display = 'none'
             page4.style.display = 'flex'
+
         }
     }
 });

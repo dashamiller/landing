@@ -26,16 +26,16 @@
 
 
     <main id="content">
-        
+
         <div id="artContent" class="gallery-container">
             <div class="photo-column">
-                 <div id="rubik" class="gallery-cover mainingrid">
-                     <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
-                     <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
-                 </div>
+                <div id="rubik" class="gallery-cover mainingrid">
+                    <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
+                    <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
+                </div>
 
 
- <!-- 
+                <!-- 
                  <div id="rubik3" class="gallery-cover">
                      <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
                      <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
@@ -54,7 +54,8 @@
 
 
         <div id="artProjectsContent" class="gallery-container">
- <!-- KOLONKA -->  <div class="photo-column">
+            <!-- KOLONKA -->
+            <div class="photo-column">
                 <div id="move" class="gallery-cover">
                     <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy"
                         class="cover-image">
@@ -69,14 +70,15 @@
                         class="hover-image">
                 </div>
 
-          </div>
+            </div>
 
-            
- <!-- KOLONKA -->  <div class="photo-column"> 
+
+            <!-- KOLONKA -->
+            <div class="photo-column">
                 <div id="enterTheVoid" class="gallery-cover ">
                     <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects 1" loading="lazy"
                         class="cover-image ">
-                    <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects 2" loading="lazy" 
+                    <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects 2" loading="lazy"
                         class="hover-image">
                 </div>
 
@@ -112,13 +114,17 @@
 
 
         <div id="contactContent">
-            <div id="gif-background"></div> <!-- Напівпрозорий GIF-фон -->
+            <div id="gif-background">
+                <img src="photos/background.gif" alt="back " loading="lazy">
+
+            </div> 
+
             <div id="contact-info">
                 <h2>CONTACT INFORMATION</h2>
                 <!-- Ваші контактні дані тут -->
             </div>
         </div>
-  
+
 
 
     </main>
@@ -129,7 +135,23 @@
 
     <div id="rubikFolder" class="gallery-popup" style="display: none;">
         <!-- Галерея зображень тут -->
-        <img src="photos/art/rubik/2.jpg" alt="artProjects 2" loading="lazy" class="gallery-popup-item">
+        <div class="gallery-content">
+            <div class="gallery-container">
+                <div class="photo-column">
+                    <img src="photos/art/rubik/2.jpg" alt="artProjects 2" loading="lazy" class="gallery-popup-item">
+                    <img src="photos/art/rubik/3.jpg" alt="artProjects 2" loading="lazy" class="gallery-popup-item">
+                    <img src="photos/art/rubik/4.jpg" alt="artProjects 2" loading="lazy" class="gallery-popup-item">
+                </div>
+
+                <div class="photo-column">
+                    <img src="photos/art/rubik/7.jpg" alt="artProjects 2" loading="lazy" class="gallery-popup-item">
+                    <img src="photos/art/rubik/6.jpg" alt="artProjects 2" loading="lazy" class="gallery-popup-item">
+                    <img src="photos/art/rubik/5.jpg" alt="artProjects 2" loading="lazy" class="gallery-popup-item">
+                </div>
+
+            </div>
+        </div>
+
         <span class="close-btn" onclick="closeGallery('rubikFolder')">&times;</span>
     </div>
 
@@ -206,7 +228,7 @@
         <div class="gallery-content">
             <div class="hui">
                 <img src="photos/artProjects/blueRoom/coverBlueRoom.jpg" alt="artProjects " loading="lazy"
-                class="gallery-popup-item mainingrid">
+                    class="gallery-popup-item mainingrid">
             </div>
             <div class="gallery-container ">
                 <div class="photo-column  ">
@@ -222,7 +244,7 @@
                     <img src="photos/artProjects/blueRoom/hoverBlueRoom.jpg" alt="artProjects " loading="lazy"
                         class="gallery-popup-item">
                 </div>
-                
+
             </div>
         </div>
         <span class="close-btn" onclick="closeGallery('blueRoomFolder')">&times;</span>
