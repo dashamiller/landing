@@ -85,26 +85,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const enterTheVoidItem = document.getElementById('enterTheVoid');
             enterTheVoidItem.addEventListener('click', function () {
-                const enterTheVoidFolderToOpen = document.getElementById('enterTheVoid')
+                const enterTheVoidFolderToOpen = document.getElementById('enterTheVoidFolder')
                 enterTheVoidFolderToOpen.style.display = 'flex';
             });
-            const enterTheVoidToClose = document.getElementById('enterTheVoid');
-            enterTheVoidToClose.addEventListener('click', function (e) {
-                if (e.target === enterTheVoidToClose) {
-                    enterTheVoidToClose.style.display = 'none'
+            const enterTheVoidFolderToClose = document.getElementById('enterTheVoidFolder');
+            enterTheVoidFolderToClose.addEventListener('click', function (e) {
+                if (e.target === enterTheVoidFolderToClose) {
+                 enterTheVoidFolderToClose.style.display = 'none'
                 }
 
             });
 
             const handOfGodItem = document.getElementById('handOfGod');
             handOfGodItem.addEventListener('click', function () {
-                const handOfGodFolderToOpen = document.getElementById('handOfGod')
+                const handOfGodFolderToOpen = document.getElementById('handOfGodFolder')
                 handOfGodFolderToOpen.style.display = 'flex';
             });
-            const handOfGodToClose = document.getElementById('handOfGod');
-            handOfGodToClose.addEventListener('click', function (e) {
+            const handOfGodFolderToClose = document.getElementById('handOfGodFolder');
+            handOfGodFolderToClose.addEventListener('click', function (e) {
                 if (e.target === handOfGodToClose) {
-                    handOfGodToClose.style.display = 'none'
+                    handOfGodFolderToClose.style.display = 'none'
+                }
+
+            });
+
+            const blueRoomItem = document.getElementById('blueRoom');
+            blueRoomItem.addEventListener('click', function () {
+                const blueRoomFolderToOpen = document.getElementById('blueRoomFolder')
+                blueRoomFolderToOpen.style.display = 'flex';
+            });
+            const  blueRoomFolderToClose = document.getElementById('blueRoomFolder');
+            blueRoomFolderToClose.addEventListener('click', function (e) {
+                if (e.target === blueRoomFolderToClose) {
+                    blueRoomFolderToClose.style.display = 'none'
                 }
 
             });
