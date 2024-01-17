@@ -112,29 +112,6 @@ nav ul li a:hover {
     opacity: 0;
 }
 
-#move:hover .cover-image {
-    opacity: 0;
-}
-
-#move:hover .hover-image {
-    opacity: 1;
-}
-
-#handOfGod:hover .cover-image {
-    opacity: 0;
-}
-
-#handOfGod:hover .hover-image {
-    opacity: 1;
-}
-
-#enterTheVoid:hover .cover-image {
-    opacity: 0;
-}
-
-#enterTheVoid:hover .hover-image {
-    opacity: 1;
-}
 
 .gallery-cover {
     position: relative;
@@ -171,4 +148,50 @@ top: 10px;
 right: 25px;
 font-size: 35px;
 color: white;
+}
+
+
+
+/* =============================================================== */
+/* for all changeble photo we should create pair of hover->opacity */
+/* id:hover .cover-image.... */
+/* id:hover .hover-image.... */
+
+#rubik:hover .cover-image {
+    opacity: 0;
+}
+#rubik:hover .hover-image {
+    opacity: 1;
+}
+
+
+#rubik1:hover .cover-image {
+    opacity: 0;
+}
+#rubik1:hover .hover-image {
+    opacity: 1;
+}
+
+
+#move:hover .cover-image {
+    opacity: 0;
+}
+#move:hover .hover-image {
+    opacity: 1;
+}
+
+
+#handOfGod:hover .cover-image {
+    opacity: 0;
+}
+#handOfGod:hover .hover-image {
+    opacity: 1;
+}
+
+
+#enterTheVoid:hover .cover-image {
+    opacity: 0;
+}
+#enterTheVoid:hover .hover-image {
+    opacity: 1;
 }

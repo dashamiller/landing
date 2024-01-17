@@ -26,23 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function loadContent(section) {
+        const page1 = document.getElementById('artContent');
+        const page2 = document.getElementById('artProjectsContent');
+        const page3 = document.getElementById('commercialContent');
+        const page4 = document.getElementById('contactContent');
 
         if (section === 'art') {
-            contentContainer.innerHTML = `
-            <div class="gallery-container">
-                <div class="photo-column">
-                <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
-                <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
-            
-                </div>
-            <div class="photo-column">
-                <div id="rubik" class="gallery-cover">
-                    <img src="photos/art/1.jpg" alt="Cover" loading="lazy" class="cover-image">
-                    <img src="photos/art/2.jpg" alt="Hover" loading="lazy" class="hover-image">
-                </div>
-            </div>
-          
-            `;
+
+            page1.style.display = 'flex'
+            page2.style.display = 'none'
+            page3.style.display = 'none'
+            page4.style.display = 'none'
+
             // дістаємо елемент по якому будемо клікать
             const rubikItem = document.getElementById('rubik');
             // обявляємо що будемо слухать клік (внутрощі функції будуть виконуватись на клік)
@@ -70,29 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         else if (section === 'artProjects') {
-            contentContainer.innerHTML = `
-            <div class="gallery-container">
-            <div class="photo-column">
-                <div id="move" class="gallery-cover">
-                   <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
-                   <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
-                </div>
-
-                <div id="handOfGod" class="gallery-cover">
-                    <img src="photos/artProjects/handOfGod/cover.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
-                    <img src="photos/artProjects/handOfGod/1.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
-                </div>
-                
-            </div>
-
-            <div class="photo-column">
-                <div id="enterTheVoid" class="gallery-cover">
-                   <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects 1" loading="lazy" class="cover-image">
-                   <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects 2" loading="lazy" class="hover-image">
-                </div>
-           </div>
-         </div>
-            `;
+            page1.style.display = 'none'
+            page2.style.display = 'flex'
+            page3.style.display = 'none'
+            page4.style.display = 'none'
 
 
             const moveItem = document.getElementById('move');
@@ -135,32 +111,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
         else if (section === 'commercial') {
-            contentContainer.innerHTML = `
-                <div class="gallery-container">
-                    <div class="photo-column">
-                        <img src="photos/commercial/IMG_7100.JPG" alt="Commercial 1" loading="lazy">
-                        <img src="photos/commercial/IMG_7355.JPG" alt="Commercial 2" loading="lazy">
-                    </div>
-                    <div class="photo-column">
-                        <img src="photos/commercial/IMG_7099.JPG" alt="Commercial 3" loading="lazy">
-                        <img src="photos/commercial/IMG_7338.JPG" alt="Commercial 4" loading="lazy">
-                        <img src="photos/commercial/dasha.jpeg" alt="Commercial " loading="lazy">
-                    </div>
-                </div>
-            `;
+            page1.style.display = 'none'
+            page2.style.display = 'none'
+            page3.style.display = 'flex'
+            page4.style.display = 'none'
         }
 
 
         else if (section === 'contact') {
-            contentContainer.innerHTML = `
-                <div id="gif-background"></div> <!-- Напівпрозорий GIF-фон -->
-                <div id="contact-info">
-                    <h2>CONTACT INFORMATION</h2>
-                    <!-- Ваші контактні дані тут -->
-                </div>
-            `;
+            page1.style.display = 'none'
+            page2.style.display = 'none'
+            page3.style.display = 'none'
+            page4.style.display = 'flex'
         }
-
-
     }
 });
