@@ -5,6 +5,12 @@ body {
     color: rgb(190, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
+.pizda {
+    background-color: rgb(194, 10, 10);
+    color: rgb(40, 234, 215);
+    font-family: 'Poppins', sans-serif;
+}
+
 
 header {
     display: flex;
@@ -241,4 +247,34 @@ nav ul li a:hover {
 
 #blueRoom:hover .hover-image {
     opacity: 1;
+}
+
+
+
+
+/* Initial state of content */
+.gallery-container {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Fade-out state */
+.fade-out {
+    opacity: 0;
+}
+
+/* Fade-in state */
+.fade-in {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

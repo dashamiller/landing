@@ -31,12 +31,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const page3 = document.getElementById('commercialContent');
         const page4 = document.getElementById('contactContent');
 
+        const currentContent = document.querySelector('.gallery-container:not([style*="display: none"])');
+        currentContent.classList.add('fade-out');
+
+        setTimeout(() => {
+            // Existing logic to hide all sections and show the clicked one
+            const sections = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
+            sections.forEach((sec) => {
+                const content = document.getElementById(sec);
+                if (sec === section + 'Content') {
+                    content.style.display = 'flex'; // Or 'block', depending on your layout
+                    content.classList.remove('fade-out');
+                    content.classList.add('fade-in');
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+
         if (section === 'art') {
 
             page1.style.display = 'flex'
             page2.style.display = 'none'
             page3.style.display = 'none'
             page4.style.display = 'none'
+            document.body.style.backgroundColor = "white";
+            var headerLinks = document.querySelectorAll('header a');
+            for (var i = 0; i < headerLinks.length; i++) {
+                headerLinks[i].style.color = 'black';
+            }
 
             // дістаємо елемент по якому будемо клікать
             const rubikItem = document.getElementById('rubik');
@@ -69,6 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
             page2.style.display = 'flex'
             page3.style.display = 'none'
             page4.style.display = 'none'
+            document.body.style.backgroundColor = "white";
+            var headerLinks = document.querySelectorAll('header a');
+            for (var i = 0; i < headerLinks.length; i++) {
+                headerLinks[i].style.color = 'black';
+            }
 
 
             const moveItem = document.getElementById('move');
@@ -91,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const enterTheVoidFolderToClose = document.getElementById('enterTheVoidFolder');
             enterTheVoidFolderToClose.addEventListener('click', function (e) {
                 if (e.target === enterTheVoidFolderToClose) {
-                 enterTheVoidFolderToClose.style.display = 'none'
+                    enterTheVoidFolderToClose.style.display = 'none'
                 }
 
             });
@@ -114,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const blueRoomFolderToOpen = document.getElementById('blueRoomFolder')
                 blueRoomFolderToOpen.style.display = 'flex';
             });
-            const  blueRoomFolderToClose = document.getElementById('blueRoomFolder');
+            const blueRoomFolderToClose = document.getElementById('blueRoomFolder');
             blueRoomFolderToClose.addEventListener('click', function (e) {
                 if (e.target === blueRoomFolderToClose) {
                     blueRoomFolderToClose.style.display = 'none'
@@ -128,15 +155,27 @@ document.addEventListener('DOMContentLoaded', () => {
             page2.style.display = 'none'
             page3.style.display = 'flex'
             page4.style.display = 'none'
-        }
+            document.body.style.backgroundColor = "white";
+            var headerLinks = document.querySelectorAll('header a');
+            for (var i = 0; i < headerLinks.length; i++) {
+                headerLinks[i].style.color = 'black';
+            }
 
+        }
 
         else if (section === 'contact') {
             page1.style.display = 'none'
             page2.style.display = 'none'
             page3.style.display = 'none'
             page4.style.display = 'flex'
-
+            document.body.style.backgroundColor = "#050000";
+            var headerLinks = document.querySelectorAll('header a');
+            for (var i = 0; i < headerLinks.length; i++) {
+                headerLinks[i].style.color = 'white';
+            }
         }
+    }, 500);
     }
+
+    
 });
