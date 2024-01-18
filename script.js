@@ -1,11 +1,54 @@
+
+
+function preloadImage(imageUrl) {
+    const img = new Image();
+    img.src = imageUrl;
+    // Ви можете додати логіку для подій 'load' або 'error', якщо потрібно
+    img.onload = () => console.log(`Image preloaded: ${imageUrl}`);
+}
+preloadImage('photos/art/1.jpg');
+
+
+
 function closeGallery(idOfComponentToClose) {
     const galleryPopup = document.getElementById(idOfComponentToClose);
     galleryPopup.style.display = 'none';
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const contentContainer = document.getElementById('content');
     const navLinks = document.querySelectorAll('.nav-link');
+
+
+    // Створіть масив з усіма зображеннями
+    const imagesToLoad = document.querySelectorAll('.pidoras');
+    let imagesLoaded = 0;
+
+    // Функція для перевірки, чи всі зображення завантажені
+    const imageLoaded = () => {
+        imagesLoaded++;
+        if (imagesLoaded === imagesToLoad.length) {
+            // Якщо всі зображення завантажені, ховаємо лоадер і показуємо вміст
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('artProjectsContent').style.display = 'flex';
+        }
+    };
+
+    // Для кожного зображення додаємо обробники подій onload та onerror
+    imagesToLoad.forEach(img => {
+        // Якщо зображення вже завантажене (з кешу), викликаємо imageLoaded
+        if (img.complete) {
+            imageLoaded();
+        } else {
+            // Інакше, чекаємо на завантаження або помилку
+            img.onload = imageLoaded;
+            img.onerror = imageLoaded; // Також вважаємо помилку завантаження як завантажене зображення
+        }
+    });
+
+
+
 
     // Initialize the page with 'art' section
     loadContent('art');
@@ -34,32 +77,44 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentContent = document.querySelector('.gallery-container:not([style*="display: none"])');
         currentContent.classList.add('fade-out');
 
-        setTimeout(() => {
-            // Existing logic to hide all sections and show the clicked one
-            const sections = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
-            sections.forEach((sec) => {
-                const content = document.getElementById(sec);
-                if (sec === section + 'Content') {
-                    content.style.display = 'flex'; // Or 'block', depending on your layout
-                    content.classList.remove('fade-out');
-                    content.classList.add('fade-in');
-                } else {
-                    content.style.display = 'none';
-                }
-            });
+        // setTimeout(() => {
+        //     // Existing logic to hide all sections and show the clicked one
+        //     const sections = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
+        //     sections.forEach((sec) => {
+        //         const content = document.getElementById(sec);
+        //         if (sec === section + 'Content') {
+        //             content.style.display = 'flex'; // Or 'block', depending on your layout
+        //             content.classList.remove('fade-out');
+        //             content.classList.add('fade-in');
+        //         } else {
+        //             content.style.display = 'none';
+        //         }
+        //     });
 
         if (section === 'art') {
-
-            page1.style.display = 'flex'
-            page2.style.display = 'none'
-            page3.style.display = 'none'
-            page4.style.display = 'none'
-            document.body.style.backgroundColor = "white";
-            var headerLinks = document.querySelectorAll('header a');
-            for (var i = 0; i < headerLinks.length; i++) {
-                headerLinks[i].style.color = 'black';
-            }
-
+            setTimeout(() => {
+                // Existing logic to hide all sections and show the clicked one
+                const sections = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
+                sections.forEach((sec) => {
+                    const content = document.getElementById(sec);
+                    if (sec === section + 'Content') {
+                        content.style.display = 'flex'; // Or 'block', depending on your layout
+                        content.classList.remove('fade-out');
+                        content.classList.add('fade-in');
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+                page1.style.display = 'flex'
+                page2.style.display = 'none'
+                page3.style.display = 'none'
+                page4.style.display = 'none'
+                document.body.style.backgroundColor = "white";
+                var headerLinks = document.querySelectorAll('header a');
+                for (var i = 0; i < headerLinks.length; i++) {
+                    headerLinks[i].style.color = 'black';
+                }
+            }, 10);
             // дістаємо елемент по якому будемо клікать
             const rubikItem = document.getElementById('rubik');
             // обявляємо що будемо слухать клік (внутрощі функції будуть виконуватись на клік)
@@ -87,15 +142,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         else if (section === 'artProjects') {
-            page1.style.display = 'none'
-            page2.style.display = 'flex'
-            page3.style.display = 'none'
-            page4.style.display = 'none'
-            document.body.style.backgroundColor = "white";
-            var headerLinks = document.querySelectorAll('header a');
-            for (var i = 0; i < headerLinks.length; i++) {
-                headerLinks[i].style.color = 'black';
-            }
+            setTimeout(() => {
+                // Existing logic to hide all sections and show the clicked one
+                const sections = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
+                sections.forEach((sec) => {
+                    const content = document.getElementById(sec);
+                    if (sec === section + 'Content') {
+                        content.style.display = 'flex'; // Or 'block', depending on your layout
+                        content.classList.remove('fade-out');
+                        content.classList.add('fade-in');
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+                page1.style.display = 'none'
+                page2.style.display = 'flex'
+                page3.style.display = 'none'
+                page4.style.display = 'none'
+                document.body.style.backgroundColor = "white";
+                var headerLinks = document.querySelectorAll('header a');
+                for (var i = 0; i < headerLinks.length; i++) {
+                    headerLinks[i].style.color = 'black';
+                }
+            }, 500);
 
 
             const moveItem = document.getElementById('move');
@@ -151,31 +220,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
         else if (section === 'commercial') {
-            page1.style.display = 'none'
-            page2.style.display = 'none'
-            page3.style.display = 'flex'
-            page4.style.display = 'none'
-            document.body.style.backgroundColor = "white";
-            var headerLinks = document.querySelectorAll('header a');
-            for (var i = 0; i < headerLinks.length; i++) {
-                headerLinks[i].style.color = 'black';
-            }
-
+            setTimeout(() => {
+                // Existing logic to hide all sections and show the clicked one
+                const sections = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
+                sections.forEach((sec) => {
+                    const content = document.getElementById(sec);
+                    if (sec === section + 'Content') {
+                        content.style.display = 'flex'; // Or 'block', depending on your layout
+                        content.classList.remove('fade-out');
+                        content.classList.add('fade-in');
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+                page1.style.display = 'none'
+                page2.style.display = 'none'
+                page3.style.display = 'flex'
+                page4.style.display = 'none'
+                document.body.style.backgroundColor = "white";
+                var headerLinks = document.querySelectorAll('header a');
+                for (var i = 0; i < headerLinks.length; i++) {
+                    headerLinks[i].style.color = 'black';
+                }
+            }, 500);
         }
 
         else if (section === 'contact') {
-            page1.style.display = 'none'
-            page2.style.display = 'none'
-            page3.style.display = 'none'
-            page4.style.display = 'flex'
-            document.body.style.backgroundColor = "#050000";
-            var headerLinks = document.querySelectorAll('header a');
-            for (var i = 0; i < headerLinks.length; i++) {
-                headerLinks[i].style.color = 'white';
-            }
+            setTimeout(() => {
+                // Existing logic to hide all sections and show the clicked one
+                const sections = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
+                sections.forEach((sec) => {
+                    const content = document.getElementById(sec);
+                    if (sec === section + 'Content') {
+                        content.style.display = 'flex'; // Or 'block', depending on your layout
+                        content.classList.remove('fade-out');
+                        content.classList.add('fade-in');
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+                page1.style.display = 'none'
+                page2.style.display = 'none'
+                page3.style.display = 'none'
+                page4.style.display = 'flex'
+                document.body.style.backgroundColor = "#050000";
+                var headerLinks = document.querySelectorAll('header a');
+                for (var i = 0; i < headerLinks.length; i++) {
+                    headerLinks[i].style.color = 'white';
+                }
+            }, 500);
         }
-    }, 500);
+        // }, 500);
     }
 
-    
+
 });
