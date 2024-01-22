@@ -101,7 +101,7 @@ nav ul li a:hover {
  /* !!!проба нормально поставити гіфку!!!  */
     width: 0vw;      
     position: absolute;
-    left: 25%;
+    left: 27%;
 }
 
 
@@ -186,11 +186,29 @@ nav ul li a:hover {
     font-size: 35px;
     color: white;
 }
+h2{
+   padding-left: 22%;
+}
 
+.contact-links{
+    display: flex;
+justify-content: center;
+/* align-items: center; */
+padding-top: 200px;
 
-
-
-
+   
+}
+.contact-icon{
+    font-size: 50px;
+    color: #333;
+    margin: 0 40px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+/* .insta-icon{
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 300px;} */
 /* =============================================================== */
 /* for all changeble photo we should create pair of hover->opacity */
 /* id:hover .cover-image.... */
@@ -306,7 +324,23 @@ nav ul li a:hover {
 header{
     justify-content: space-around;
 }
+#gif-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* opacity: 0.9; */
+    height: 100vh;
+    /* width: 100vw;
+    position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    z-index: -1;
+ /* !!!проба нормально поставити гіфку!!!  */
+    width: 0vw;      
+    position: absolute;
+   left: 0%;
 
+}
 }
 
 
@@ -350,6 +384,28 @@ header{
         transition: color 0.3s ease-in-out;
         font-size: 10px;
     } 
+
+    #gif-background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        /* opacity: 0.9; */
+        height: 100vh;
+        /* width: 100vw;
+        position: fixed; */
+        /* top: 0; */
+        /* left: 0; */
+        z-index: -1;
+     /* !!!проба нормально поставити гіфку!!!  */
+        width: 0vw;      
+        position: absolute;
+       left: -20%;
+   
+    }
+
+
+
+
 }
 
 
