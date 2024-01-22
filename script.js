@@ -26,15 +26,39 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesLoaded = 0;
 
     // Функції
-    function showSection(sectionId) {
-        const sectionsNames = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
-        sectionsNames.forEach(sectionName => {
-            const content = document.getElementById(sectionName);
+
+
+
+    // function showSection(sectionId) {
+    //     const sectionsNames = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
+    //     sectionsNames.forEach(sectionName => {
+    //         const content = document.getElementById(sectionName);
+    //         content.style.display = sectionName === sectionId ? 'flex' : 'none';
+
+    //         content.classList.toggle('fade-in', sectionName === sectionId);
+    //         content.classList.toggle('fade-out', sectionName !== sectionId);
+    //     });
+    // }
+
+function showSection(sectionId) {
+    const sectionsNames = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];   
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    sectionsNames.forEach(sectionName => {
+        const content = document.getElementById(sectionName);
+                if (screenWidth < 600) {
+            // Для мобільних пристроїв
+            content.style.display = sectionName === sectionId ? 'block' : 'none';
+        } 
+        else {
+            // Для широких екранів
             content.style.display = sectionName === sectionId ? 'flex' : 'none';
-            content.classList.toggle('fade-in', sectionName === sectionId);
-            content.classList.toggle('fade-out', sectionName !== sectionId);
-        });
-    }
+        }
+        content.classList.toggle('fade-in', sectionName === sectionId);
+        content.classList.toggle('fade-out', sectionName !== sectionId);
+    });
+}
+
 
 //=============================
 
@@ -108,13 +132,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Обробники для попапів
+    // document.querySelectorAll('.gallery-cover').forEach(item => {
+    //     item.addEventListener('click', function() {
+    //         const folderId = this.id + 'Folder';
+    //         const folderToOpen = document.getElementById(folderId);
+    //         folderToOpen.style.display = 'flex';
+    //     });
+    // });
+
+
     document.querySelectorAll('.gallery-cover').forEach(item => {
         item.addEventListener('click', function() {
+            const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;           
             const folderId = this.id + 'Folder';
             const folderToOpen = document.getElementById(folderId);
+            if (screenWidth < 600) {
+                folderToOpen.style.display = 'block';
+            }
+             else {
             folderToOpen.style.display = 'flex';
-        });
+    }});
     });
+
+
+
 
     document.querySelectorAll('.gallery-popup').forEach(folder => {
         folder.addEventListener('click', function(e) {

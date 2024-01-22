@@ -346,6 +346,9 @@ header{
 
 /* ------------------FOR SMARTPHONES------------------------ */
 @media only screen and (max-width:600px){
+    /* body{
+        padding-left: 50px;
+    } */
 
     ul {
         /* width: 200px; */
@@ -385,6 +388,52 @@ header{
         font-size: 10px;
     } 
 
+
+    .gallery-container {
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
+        display: block;
+        justify-content: center;
+        gap: 40px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+    .mainingrid{
+    width:auto;
+}
+
+
+.gallery-cover {
+    position: relative;
+    cursor: default;
+    width: 100%;
+    height: 100%;
+    /* Переконайтеся, що ця висота достатня для ваших зображень */
+}
+.gallery-popup {
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 20px;
+}
+/* .align-center{
+    align-items: center;
+} */
+.gallery-popup-item {
+    max-height: 95%;
+    max-width: 95%;
+}
+
+
+
     #gif-background {
         background-size: cover;
         background-repeat: no-repeat;
@@ -403,7 +452,9 @@ header{
    
     }
 
-
+/* .gallery-container{
+   display: ;
+} */
 
 
 }
