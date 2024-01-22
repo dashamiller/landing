@@ -17,28 +17,39 @@ function closeGallery(idOfComponentToClose) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    function autoToggleHoverImages() {
+        const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (screenWidth < 600) { // Перевірка чи пристрій мобільний
+            const galleryCovers = document.querySelectorAll('.gallery-cover');
+    
+            galleryCovers.forEach(cover => {
+                let isVisible = false; // Початковий стан: cover видимий, hover невидимий
+                setInterval(() => {   // Змінюємо видимість зображень
+                    const hoverImage = cover.querySelector('.hover-image');
+                    isVisible = !isVisible;
+                    hoverImage.style.opacity = isVisible ? '1' : '0';
+                }, 5500); // Інтервал зміни зображень (5 секунд)
+            });
+        }
+    }
+    // Викликаємо функцію autoToggleHoverImages
+    autoToggleHoverImages();
+    
+
+    
     const contentContainer = document.getElementById('content');
     const navLinks = document.querySelectorAll('.nav-link');
     
 
-
     const imagesToLoad = document.querySelectorAll('.pidoras'); // Переконайтеся, що цей селектор правильний
     let imagesLoaded = 0;
 
-    // Функції
 
+    //-------- Функції------------
 
+    
 
-    // function showSection(sectionId) {
-    //     const sectionsNames = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];
-    //     sectionsNames.forEach(sectionName => {
-    //         const content = document.getElementById(sectionName);
-    //         content.style.display = sectionName === sectionId ? 'flex' : 'none';
-
-    //         content.classList.toggle('fade-in', sectionName === sectionId);
-    //         content.classList.toggle('fade-out', sectionName !== sectionId);
-    //     });
-    // }
 
 function showSection(sectionId) {
     const sectionsNames = ['artContent', 'artProjectsContent', 'commercialContent', 'contactContent'];   
@@ -78,6 +89,8 @@ function showSection(sectionId) {
 
 
 //=============================
+
+
 
     function setHeaderColor(color) {
         document.querySelectorAll('header a').forEach(link => {
@@ -131,14 +144,6 @@ function showSection(sectionId) {
         }
     });
 
-    // Обробники для попапів
-    // document.querySelectorAll('.gallery-cover').forEach(item => {
-    //     item.addEventListener('click', function() {
-    //         const folderId = this.id + 'Folder';
-    //         const folderToOpen = document.getElementById(folderId);
-    //         folderToOpen.style.display = 'flex';
-    //     });
-    // });
 
 
     document.querySelectorAll('.gallery-cover').forEach(item => {

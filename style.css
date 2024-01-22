@@ -340,13 +340,18 @@ header{
 }
 }
 
-
+ /* ----------------------------------------------------------------- */
 /* ------------------FOR SMARTPHONES------------------------ */
 @media only screen and (max-width:600px){
-    /* body{
-        padding-left: 50px;
-    } */
-
+    .cover-image, hover-image {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 1;
+        transition: opacity 3.5s cubic-bezier(0.4, 0, 1, 1);
+    }
     ul {
         /* width: 200px; */
         height: auto;
