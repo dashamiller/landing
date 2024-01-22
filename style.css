@@ -300,9 +300,6 @@ padding-top: 200px;
 
 
 
-
-
-
 .loader {
     position: fixed;
     z-index: 1000;
@@ -432,7 +429,9 @@ header{
     max-width: 95%;
 }
 
-
+h2{
+    padding-left: 28%;
+ }
 
     #gif-background {
         background-size: cover;
@@ -448,7 +447,7 @@ header{
      /* !!!проба нормально поставити гіфку!!!  */
         width: 0vw;      
         position: absolute;
-       left: -20%;
+       left: -30%;
    
     }
 
