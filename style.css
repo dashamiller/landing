@@ -68,7 +68,14 @@ nav ul li a:hover {
     gap: 40px;
 }
 
-
+.project-name{
+color: rgb(35 28 19); 
+display: flex; 
+flex-direction: column;
+ align-items: center; 
+ height: 100vh;
+ padding-top: 200px;
+}
 .photo-column {
     display: flex;
     flex-direction: column;
@@ -195,14 +202,13 @@ h2{
 justify-content: center;
 /* align-items: center; */
 padding-top: 270px;
-
    
 }
 
 
  .contact-icon{
     font-size: 50px;
-    color: rgb(32, 21, 46);
+    color: rgba(187, 180, 238, 0.285); 
     margin: 0 40px;
     cursor: pointer;
    /* ПРИБРАЛА РУХ ІКОНОК В КОНТАКТАХ transition: color 0.3s ease-in-out;*/
@@ -416,9 +422,17 @@ header{
         /* padding-left: 10px;
         padding-right: 10px; */
     }
-    .mainingrid{
+
+    .project-name{
+        flex-direction:unset;
+        align-items: center; 
+        height: 6vh;
+        padding-top: 0px;
+    }
+
+    .mainingrid {
     width:auto;
-}
+    }
 
 
 .gallery-cover {
