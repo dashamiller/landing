@@ -194,7 +194,7 @@ h2{
     display: flex;
 justify-content: center;
 /* align-items: center; */
-padding-top: 200px;
+padding-top: 270px;
 
    
 }
@@ -202,7 +202,7 @@ padding-top: 200px;
 
  .contact-icon{
     font-size: 50px;
-    color: #333;
+    color: rgb(32, 21, 46);
     margin: 0 40px;
     cursor: pointer;
    /* ПРИБРАЛА РУХ ІКОНОК В КОНТАКТАХ transition: color 0.3s ease-in-out;*/
@@ -261,6 +261,13 @@ padding-top: 200px;
     opacity: 1;
 }
 
+#goneWithTheWind:hover .cover-image {
+    opacity: 0;
+}
+
+#goneWithTheWind:hover .hover-image {
+    opacity: 1;
+}
 
 #blueRoom:hover .cover-image {
     opacity: 0;

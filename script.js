@@ -42,8 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     
 
-    const imagesToLoad = document.querySelectorAll('.to-load'); // Переконайтеся, що цей селектор правильний
-    let imagesLoaded = 0;
+    const artProjectImagesToLoad = document.querySelectorAll('#artProjectsContent .pidoras'); // Переконайтеся, що цей селектор правильний
+    const commercialContentImagesToLoad = document.querySelectorAll('#commercialContent .pidoras'); // Переконайтеся, що цей селектор правильний
+    
+    let artProjectsImagesLoaded = 0;
+    let commercialImagesLoaded = 0;
 
 
     //-------- Функції------------
@@ -96,16 +99,28 @@ function showSection(sectionId) {
         document.querySelectorAll('header a').forEach(link => {
             link.style.color = color;
         });
+        document.getElementById('brand-name').style.color = color;
+      
     }
 
-    function imageLoaded() {
-        imagesLoaded++;
-        if (imagesLoaded === imagesToLoad.length) {
+    function artProjectImageLoaded() {
+        artProjectsImagesLoaded++;
+        if (artProjectsImagesLoaded === artProjectImagesToLoad.length) {
             document.getElementById('loader').style.display = 'none';
             showSection('artProjectsContent'); // Початкова секція
             setHeaderColor('black'); // Колір для початкової секції
         }
     }
+    function commercialImageLoaded() {
+        commercialImagesLoaded++;
+        if (commercialImagesLoaded === commercialContentImagesToLoad.length) {
+            document.getElementById('loader').style.display = 'none';
+            showSection('commercialContent'); // Початкова секція
+            setHeaderColor('black'); // Колір для початкової секції
+        }
+    }
+
+    
 
     function loadContent(section) {
         setTimeout(() => {
@@ -135,15 +150,22 @@ function showSection(sectionId) {
     });
 
     // Обробка завантаження зображень
-    imagesToLoad.forEach(img => {
+    artProjectImagesToLoad.forEach(img => {
         if (img.complete) {
-            imageLoaded();
+            artProjectImageLoaded();
         } else {
-            img.onload = imageLoaded;
-            img.onerror = imageLoaded;
+            img.onload = artProjectImageLoaded;
+            img.onerror = artProjectImageLoaded;
         }
     });
-
+    commercialContentImagesToLoad.forEach(img => {
+        if (img.complete) {
+            commercialImageLoaded();
+        } else {
+            img.onload = commercialImageLoaded;
+            img.onerror = commercialImageLoaded;
+        }
+    });
 
 
     document.querySelectorAll('.gallery-cover').forEach(item => {
