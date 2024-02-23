@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     
 
-    const imagesToLoad = document.querySelectorAll('.pidoras'); // Переконайтеся, що цей селектор правильний
+    const imagesToLoad = document.querySelectorAll('.to-load'); // Переконайтеся, що цей селектор правильний
     let imagesLoaded = 0;
 
 
