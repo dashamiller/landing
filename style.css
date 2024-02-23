@@ -198,13 +198,16 @@ padding-top: 200px;
 
    
 }
-.contact-icon{
+
+
+ .contact-icon{
     font-size: 50px;
     color: #333;
     margin: 0 40px;
-    transition: color 0.3s ease-in-out;
     cursor: pointer;
-}
+   /* ПРИБРАЛА РУХ ІКОНОК В КОНТАКТАХ transition: color 0.3s ease-in-out;*/
+} 
+
 /* .insta-icon{
     margin-right: 30px;
     margin-left: 30px;
@@ -267,7 +270,13 @@ padding-top: 200px;
     opacity: 1;
 }
 
+#lookbook:hover .cover-image {
+    opacity: 0;
+}
 
+#lookbook:hover .hover-image {
+    opacity: 1;
+}
 
 
 /* Initial state of content */
