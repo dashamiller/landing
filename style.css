@@ -84,17 +84,16 @@ flex-direction: column;
     width: 411px;
 }
 
-.photo-column img {
-    /* max-width: 300px; */
+/* МИ ПЕРЕРОСЛИ ЦЕЙ КЛАС. В ЯКИЙ МОМЕНТ? -- НЕ ДУЖЕ ЗРОЗУМІЛО.
+ .photo-column img {
     width: 100%;
     height: auto;
-}
+} */
 
 
 
 
 #gif-background {
-    /* background-image: url(photos/background-ezgif.com-video-to-gif-converter.gif); */
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
@@ -163,8 +162,8 @@ flex-direction: column;
 }
 
 .gallery-popup-item {
-    max-height: 100%;
-    max-width: 100%;
+    max-height:120%;
+    max-width: 120%;
 }
 .one-item-gallery {
     max-height: 70%;
@@ -272,6 +271,13 @@ padding-top: 270px;
 }
 
 #goneWithTheWind:hover .hover-image {
+    opacity: 1;
+}
+
+#amurxPsyche:hover .cover-image{
+    opacity: 0;
+}
+#amurxPsyche:hover .hover-image{
     opacity: 1;
 }
 
