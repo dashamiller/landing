@@ -30,18 +30,18 @@
 
 
 
-        
 
-<!-- приклад задання висоти відносно розміру екрана  -->
-<!-- <div>
+
+        <!-- приклад задання висоти відносно розміру екрана  -->
+        <!-- <div>
     <img id="mainPhoto" src="photos/art/1.jpg" alt="Cover" style="max-height: calc(100vh - 30vh);">
 </div> -->
 
         <div id="artContent" class="gallery-container" style="display:none">
-                <div id="rubik" class="gallery-cover mainingrid">
-                    <img id="mainPhoto" src="photos/art/1.jpg" alt="Cover" class="cover-image" >
-                    <img id="mainPhoto2" src="photos/art/2.jpg" alt="Hover" class="hover-image" >
-                </div>              
+            <div id="rubik" class="gallery-cover mainingrid">
+                <img id="mainPhoto" src="photos/art/1.jpg" alt="Cover" class="cover-image">
+                <img id="mainPhoto2" src="photos/art/2.jpg" alt="Hover" class="hover-image">
+            </div>
         </div>
 
 
@@ -54,7 +54,7 @@
                 <!-- Ви можете використати будь-який CSS спінер або анімацію тут -->
                 Loading...
             </div>
-         <!-- KOLONKA -->
+            <!-- KOLONKA -->
             <div class="photo-column">
                 <div id="move" class="gallery-cover">
                     <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy"
@@ -63,18 +63,25 @@
                         class="hover-image ">
                 </div>
 
+
+                <div id="doomsdayMan" class="gallery-cover">
+                    <img src="photos/artProjects/DoomsdayMan/coverDoom.jpg" style="height:666px;" alt="artProjects 1"
+                        loading="lazy" class="cover-image pidoras">
+                    <img src="photos/artProjects/DoomsdayMan/hoverDoom.jpg" alt="artProjects 2" loading="lazy"
+                        class="hover-image">
+
+                </div>
                 <div id="handOfGod" class="gallery-cover">
                     <!-- ковер з окремим стилем бо картинка квадратна -->
-                    <img src="photos/artProjects/handOfGod/cover.jpg" style="padding-bottom: 40px;" alt="artProjects 1"
+                    <img src="photos/artProjects/handOfGod/cover.jpg" style="padding-bottom: 166px;" alt="artProjects 1"
                         loading="lazy" class="cover-image pidoras">
                     <img src="photos/artProjects/handOfGod/1copy.jpg" alt="artProjects 2" loading="lazy"
                         class="hover-image ">
                 </div>
-
             </div>
 
 
-         <!-- KOLONKA -->
+            <!-- KOLONKA -->
 
             <div class="photo-column">
                 <div id="goneWithTheWind" class="gallery-cover">
@@ -85,12 +92,11 @@
                 </div>
 
                 <div id="amurxPsyche" class="gallery-cover">
-                    <img src="photos/artProjects/Amur x Psyche /coverAmur.jpg" alt="artProjects 1" loading="lazy" 
-                    class="cover-image pidoras">
-                    <img src="photos/artProjects/Amur x Psyche /hoverAmur.jpg" alt="artProjects 2" loading="lazy" 
-                    class="hover-image">
+                    <img src="photos/artProjects/Amur x Psyche /coverAmur.jpg" alt="artProjects 1" loading="lazy"
+                        class="cover-image pidoras">
+                    <img src="photos/artProjects/Amur x Psyche /hoverAmur.jpg" alt="artProjects 2" loading="lazy"
+                        class="hover-image">
                 </div>
-
 
                 <div id="enterTheVoid" class="gallery-cover ">
                     <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects 1" loading="lazy"
@@ -160,8 +166,6 @@
 
         </div>
 
-
-
     </main>
 
     <footer>
@@ -169,9 +173,10 @@
     </footer>
 
 
-
+    <!------------------------------------------------------------------------------ -->
     <!-- ----------------Gallery------------------- -->
-     <!-- ART -->
+
+    <!-- ART -->
     <div id="rubikFolder" class="gallery-popup" style="display: none;">
         <!-- Галерея зображень тут -->
         <div class="gallery-content">
@@ -199,8 +204,8 @@
 
     <div id="moveFolder" class="gallery-popup" style="display: none;">
         <div class="gallery-content">
-            <div class="gallery-container">              
-                  <div class="photo-column">
+            <div class="gallery-container">
+                <div class="photo-column">
                     <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 2" loading="lazy"
                         class="gallery-popup-item">
                     <img src="photos/artProjects/Move/2.jpg" alt="artProjects 2" loading="lazy"
@@ -217,11 +222,11 @@
                 <div class="project-name">
                     <span>M</span>
                     <span>O</span>
-                    <span>V</span> 
-                    <span>E</span> 
+                    <span>V</span>
+                    <span>E</span>
                 </div>
-                
-                
+
+
                 <div class="photo-column">
                     <img src="photos/artProjects/Move/7.jpg" alt="artProjects 2" loading="lazy"
                         class="gallery-popup-item">
@@ -260,8 +265,8 @@
                 <div class="project-name">
                     <span>GONE</span>
                     <span>WITH</span>
-                    <span>THE</span> 
-                    <span>WIND</span> 
+                    <span>THE</span>
+                    <span>WIND</span>
                 </div>
                 <div class="photo-column">
                     <img src="photos/artProjects/GoneWithThe Wind/2.jpeg" alt="artProjects 2" loading="lazy"
@@ -282,7 +287,7 @@
         <span class="close-btn" onclick="closeGallery('goneWithTheWindFolder')">&times;</span>
 
     </div>
-         
+
     <div id="amurxPsycheFolder" class="gallery-popup" style="display:none;">
         <div class="gallery-content">
             <div class="gallery-container">
@@ -295,7 +300,9 @@
                     <span>M</span>
                     <span>U</span>
                     <span>R</span>
+                    <span>&nbsp;</span>
                     <span>x</span>
+                    <span>&nbsp;</span>
                     <span>P</span>
                     <span>S</span>
                     <span>Y</span>
@@ -314,14 +321,29 @@
 
 
 
-    <div id="enterTheVoidFolder" class="gallery-popup align-center" style="display:none;">
+    <div id="enterTheVoidFolder" class="gallery-popup" style="display:none;">
         <div class="gallery-content">
             <div class="gallery-container ">
                 <div class="photo-column mainingrid">
                     <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects " loading="lazy"
                         class="gallery-popup-item">
                 </div>
-                
+        <div class="project-name">
+<span>E</span>
+<span>N</span>
+<span>T</span>
+<span>E</span>
+<span>R</span>
+<span>&nbsp;</span>
+<span>T</span>
+<span>H</span>
+<span>E</span>
+<span>&nbsp;</span>
+<span>V</span>
+<span>O</span>
+<span>I</span>
+<span>D</span>
+        </div>
                 <div class="photo-column mainingrid">
                     <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects " loading="lazy"
                         class="gallery-popup-item">
@@ -331,28 +353,55 @@
         <span class="close-btn" onclick="closeGallery('enterTheVoidFolder')">&times;</span>
     </div>
 
+    <div id="doomsdayManFolder" class="gallery-popup" style="display:none;">
+        <div class="gallery-content">
+            <div class="gallery-container">
+                <div class="photo-column">
+                    <img src="photos/artProjects/DoomsdayMan/2.jpg" alt="artProjects" loading="lazy"
+                        class="gallery-popup-item">
+                    <img src="photos/artProjects/DoomsdayMan/coverDoom.jpg" alt="artProjects" loading="lazy"
+                        class="gallery-popup-item">
+                </div>
+                <div class="project-name">
+                    <span>D</span>
+                    <span>O</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>S</span>
+                    <span>D</span>
+                    <span>A</span>
+                    <span>Y</span>
+                    <span>&nbsp;</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>N</span>
+
+                </div>
+                <div class="photo-column">
+                    <img src="photos/artProjects/DoomsdayMan/3.jpg" alt="artProjects" loading="lazy"
+                        class="gallery-popup-item">
+                    <img src="photos/artProjects/DoomsdayMan/hoverDoom.jpg" alt="artProjects" loading="lazy"
+                        class="gallery-popup-item">
+                </div>
+            </div>
+
+        </div>
+        <span class="close-btn" onclick="closeGallery('doomsdayManFolder')">&times;</span>
+
+    </div>
+
 
     <div id="handOfGodFolder" class="gallery-popup" style="display:none;">
-        <div class="gallery-content">   
-                     <div class="project-name" style="height: 3vh; padding-top: 10px;" > 
-                        <span>HAM of DOG</span>
-                     </div>
-            <div class="gallery-container">              
+        <div class="gallery-content">
+            <div class="project-name" style="height: 3vh; padding-top: 10px;">
+                <span>HAM of DOG</span>
+            </div>
+            <div class="gallery-container align-center">
                 <div class="mainingrid hui">
                     <img src="photos/artProjects/handOfGod/1.jpg" alt="artProjects " loading="lazy"
                         class="gallery-popup-item">
                 </div>
             </div>
-            <!-- <div class="project-name"> 
-                <span>H</span>
-                <span>A</span>
-                <span>N</span>
-                <span>D</span>
-                <span>of</span>
-                <span>G</span>
-                <span>O</span>
-                <span>D</span>
-          </div> -->
         </div>
         <span class="close-btn" onclick="closeGallery('handOfGodFolder')">&times;</span>
     </div>
@@ -417,12 +466,12 @@
                 <div class="project-name">
                     <span>L</span>
                     <span>O</span>
-                    <span>O</span> 
-                    <span>K</span> 
-                    <span>B</span> 
-                    <span>O</span> 
-                    <span>O</span> 
-                    <span>K</span> 
+                    <span>O</span>
+                    <span>K</span>
+                    <span>B</span>
+                    <span>O</span>
+                    <span>O</span>
+                    <span>K</span>
                 </div>
                 <div class="photo-column">
                     <img src="photos/commercial/lookbook/2.jpeg" alt="commercial" loading="lazy"
