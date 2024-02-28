@@ -30,84 +30,282 @@
 
 
 
-        
 
-<!-- приклад задання висоти відносно розміру екрана  -->
-<!-- <div>
+
+        <!-- приклад задання висоти відносно розміру екрана  -->
+        <!-- <div>
     <img id="mainPhoto" src="photos/art/1.jpg" alt="Cover" style="max-height: calc(100vh - 30vh);">
 </div> -->
 
         <div id="artContent" class="gallery-container" style="display:none">
-                <div id="rubik" class="gallery-cover mainingrid">
-                    <img id="mainPhoto" src="photos/art/1.jpg" alt="Cover" class="cover-image" >
-                    <img id="mainPhoto2" src="photos/art/2.jpg" alt="Hover" class="hover-image" >
-                </div>              
+            <div class="direction-column">
+                <!-- <div id="rubik" class="gallery-cover mainingrid"> -->
+                <div id="rubik" class="gallery-cover-rubik ">
+                    <img id="mainPhoto" src="photos/art/underthesnow.jpeg" alt="Cover" class="cover-image">
+                    <img id="mainPhoto2" src="photos/art/random/oneofus Medium.jpeg" alt="Hover" class="hover-image">
+                </div>
+                <div class="project-name-horizontal">
+                    <span>documentary</span>
+                </div>
+                <div class="gallery-container-documentary">
+                    <div class="photo-column-documentary">
+                        <div id="childhood" class="gallery-cover-documenrary">
+                            <img src="photos/art/childhood/IMG_0414 Medium.jpeg" alt="artProjects 1" loading="lazy"
+                                class="cover-image pidoras">
+                            <img src="photos/art/childhood/IMG_0483 Medium.jpeg " alt="artProjects 2" loading="lazy"
+                                class="hover-image">
+                        </div>
+                        <div id="saltLake" class="gallery-cover-documenrary">
+                            <img src="photos/art/saltlake/IMG_5484 Medium.jpeg" alt="artProjects 1" loading="lazy"
+                                class="cover-image pidoras">
+                            <img src="photos/art/saltlake/IMG_6414 Medium.jpeg" alt="artProjects 2" loading="lazy"
+                                class="hover-image">
+                        </div>
+                        <div id="silentSolitude" class="gallery-cover ">
+                            <img src="photos/art/silentSolitude/IMG_8027 Medium.jpeg" alt="artProjects 1" loading="lazy"
+                                class="cover-image pidoras">
+                            <img src="photos/art/silentSolitude/CE913D42-5783-467D-AF4D-61967B5B6DA1 Medium.jpeg"
+                                alt="artProjects 2" loading="lazy" class="hover-image">
+                        </div>
+                        <div id="mezha" class="gallery-cover ">
+                            <img src="photos/art/mezha/54BFEAE2-280E-4578-9D23-D3FF6C4DFA35 Medium.jpeg"
+                                alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                            <img src="photos/art/mezha/IMG_6406 Medium.jpeg" alt="artProjects 2" loading="lazy"
+                                class="hover-image">
+                        </div>
+                        <div id="random" class="gallery-cover ">
+                            <img src="photos/art/random/ochakiv_ Medium.jpeg" alt="artProjects 1" loading="lazy"
+                                class="cover-image pidoras">
+                            <img src="photos/art/random/cloudsman Medium.jpeg" alt="artProjects 2" loading="lazy"
+                                class="hover-image">
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+                            <div class="photo-column-mini">
+                                <div id="childhood" class="gallery-cover-mini ">
+                                    <img src="photos/art/childhood/IMG_0323 Medium.jpeg" style="padding-top:60px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/childhood/IMG_0294 Medium.jpeg" style="padding-top:60px;"
+                                        alt="artProjects 2" loading="lazy" class="hover-image">
+                                </div>
+                                <div id="childhood" class="gallery-cover-mini ">
+                                    <img src="photos/art/childhood/IMG_0499 Medium.jpeg" alt="artProjects 1"
+                                        loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/childhood/IMG_0365 Medium.jpeg" alt="artProjects 2"
+                                        loading="lazy" class="hover-image">
+                                </div>
+
+                                <div id="saltLake" class="gallery-cover-mini">
+                                    <img src="photos/art/saltlake/IMG_5607 Medium.jpeg" style="padding-top: 100px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/saltlake/IMG_4254 Medium.jpeg" style="padding-top: 100px;"
+                                        alt="artProjects 1" loading="lazy" class="hover-image">
+                                </div>
+                                <div id="saltLake" class="gallery-cover-mini">
+                                    <img src="photos/art/saltlake/IMG_5645 Medium.jpeg" style="padding-top: 20px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/saltlake/IMG_5270 Medium.jpeg " style="padding-top: 20px;"
+                                        alt="artProjects 1" loading="lazy" class="hover-image">
+                                </div>
+
+                            </div>
+
+
+                            <div class="photo-column-mini">
+                                <div id="saltLake" class="gallery-cover-mini">
+                                    <img src="photos/art/childhood/IMG_0697 Medium.jpeg" style="padding-top: 220px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/childhood/IMG_0649 Medium.jpeg" style="padding-top: 220px;"
+                                        alt="artProjects 1" loading="lazy" class="hover-image">
+                                </div>
+                                <div id="saltLake" class="gallery-cover-mini">
+                                    <img src="photos/art/saltlake/IMG_5315 Medium.jpeg" style="padding-top: 273px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/saltlake/IMG_5631 Medium.jpeg" style="padding-top: 625px;"
+                                        alt="artProjects 1" loading="lazy" class="hover-image">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="saltLake" class="gallery-cover-mini" style="width: 530px;">
+                            <img src="photos/art/saltlake/IMG_5059 Medium.jpeg" alt="artProjects 1" loading="lazy"
+                                class=" one-item-mini  cover-image  pidoras">
+                            <img src="photos/art/saltlake/IMG_5017 Medium.jpeg" alt="artProjects 1" loading="lazy"
+                                class="one-item-mini  hover-image">
+                        </div>
+
+                        <div style="display: flex;">
+                            <div class="photo-column-mini">
+                                <div id="silentSolitude" class="gallery-cover-mini ">
+                                    <img src="photos/art/silentSolitude/4203CC0B-E87C-462A-B74B-5FEAB5FA8AE8 Medium.jpeg"
+                                        style="padding-top: 50px;" alt="artProjects 1" loading="lazy"
+                                        class="cover-image pidoras">
+                                    <img src="photos/art/silentSolitude/8A288071-D112-4B5F-A9B2-CBC56F2E3747 Medium.jpeg"
+                                        style="padding-top: 50px;" alt="artProjects 2" loading="lazy"
+                                        class="hover-image">
+                                </div>
+                                <div id="mezha" class="gallery-cover-mini ">
+                                    <img src="photos/art/mezha/44AC2ADF-5076-44F9-9D95-90C299F52C1F Medium.jpeg"
+                                        style="padding-top: 187px;" alt="artProjects 1" loading="lazy"
+                                        class="cover-image pidoras">
+                                    <img src="photos/art/mezha/35796F83-30F3-4D13-984B-A8F40C6A8670 Medium.jpeg"
+                                        style="padding-top: 187px;" alt="artProjects 2" loading="lazy"
+                                        class="hover-image">
+                                </div>
+                                <div id="mezha" class="gallery-cover-mini ">
+                                    <img src="photos/art/mezha/IMG_6425 Medium.jpeg" style="padding-top: 27px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/mezha/C45015F4-E827-4CDA-B0AF-31A117CB79B1 Medium.jpeg"
+                                        style="padding-top: 27px;" alt="artProjects 2" loading="lazy"
+                                        class="hover-image">
+                                </div>
+                                <div id="random" class="gallery-cover-mini ">
+                                    <img src="photos/art/random/IMG_2820 Medium.jpeg" style="padding-top: 80px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/random/IMG_2819 Medium.jpeg" style="padding-top: 80px;"
+                                        alt="artProjects 2" loading="lazy" class="hover-image">
+                                </div>
+                            </div>
+                            <div class="photo-column-mini">
+                                <div id="silentSolitude" class="gallery-cover-mini ">
+                                    <img src="photos/art/silentSolitude/F837B50F-BB50-4940-954B-9FAD422E75EA Medium.jpeg"
+                                        style="padding-top: 50px;" alt="artProjects 1" loading="lazy"
+                                        class="cover-image pidoras">
+                                    <img src="photos/art/silentSolitude/E105EAAB-CB13-49F4-92FB-AAD5DE79A93F Medium.jpeg"
+                                        style="padding-top: 50px;" alt="artProjects 2" loading="lazy"
+                                        class="hover-image">
+                                </div>
+                                <div id="mezha" class="gallery-cover-mini ">
+                                    <img src="photos/art/mezha/FullSizeRender Medium.jpeg" style="padding-top: 320px;"
+                                        alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                                    <img src="photos/art/mezha/4A1071B5-F786-4AC4-AC05-0B7A8D561D70 Medium.jpeg"
+                                        style="padding-top: 320px;" alt="artProjects 2" loading="lazy"
+                                        class="hover-image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="saltLake" class="gallery-cover-mini" style="width: 530px;">
+                            <img src="photos/art/random/ochakiv Medium.jpeg" alt="artProjects 1" loading="lazy"
+                                class=" one-item-mini  cover-image  pidoras">
+                            <img src="photos/art/dasha.jpeg" alt="artProjects 1" loading="lazy"
+                                class="one-item-mini  hover-image">
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="photo-column-mini" >
+                        <div id="saltLake" class="gallery-cover-mini">
+                            <img src="photos/art/saltlake/IMG_5315 Medium.jpeg" style="padding-top: 1000px; "   alt="artProjects 1" loading="lazy" 
+                            class="cover-image pidoras">
+                            <img src="photos/art/saltlake/IMG_5704 Medium.jpeg"    style="padding-top: 1000px;" alt="artProjects 1" loading="lazy" 
+                            class="hover-image">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </div>
 
 
 
 
 
-        <div id="artProjectsContent" class="gallery-container" style="display:none">
+        <div id="artProjectsContent" class="direction-column" style="display:none">
 
             <div id="loader" class="loader">
                 <!-- Ви можете використати будь-який CSS спінер або анімацію тут -->
                 Loading...
             </div>
-         <!-- KOLONKA -->
-            <div class="photo-column">
-                <div id="move" class="gallery-cover">
-                    <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy"
-                        class="cover-image pidoras">
-                    <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy"
-                        class="hover-image ">
+
+            <!-- KOLONKA -->
+            <div class="gallery-container">
+                <div class="photo-column">
+                    <div id="move" class="gallery-cover">
+                        <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 1" loading="lazy"
+                            class="cover-image pidoras">
+                        <img src="photos/artProjects/Move/hoverMove.jpg" alt="artProjects 2" loading="lazy"
+                            class="hover-image ">
+                    </div>
+
+
+                    <div id="doomsdayMan" class="gallery-cover">
+                        <img src="photos/artProjects/DoomsdayMan/coverDoom.jpeg" style="height:666px;"
+                            alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                        <img src="photos/artProjects/DoomsdayMan/hoverDoom.jpg" alt="artProjects 2" loading="lazy"
+                            class="hover-image">
+
+                    </div>
+
                 </div>
 
-                <div id="handOfGod" class="gallery-cover">
-                    <!-- ковер з окремим стилем бо картинка квадратна -->
-                    <img src="photos/artProjects/handOfGod/cover.jpg" style="padding-bottom: 40px;" alt="artProjects 1"
-                        loading="lazy" class="cover-image pidoras">
-                    <img src="photos/artProjects/handOfGod/1copy.jpg" alt="artProjects 2" loading="lazy"
-                        class="hover-image ">
-                </div>
 
+                <!-- KOLONKA -->
+
+                <div class="photo-column">
+                    <div id="goneWithTheWind" class="gallery-cover">
+                        <img src="photos/artProjects/GoneWithThe Wind/coverWind.jpeg" alt="artProjects 1" loading="lazy"
+                            class="cover-image pidoras">
+                        <img src="photos/artProjects/GoneWithThe Wind/hoverWind.jpeg" alt="artProjects 2" loading="lazy"
+                            class="hover-image ">
+                    </div>
+
+                    <div id="amurxPsyche" class="gallery-cover">
+                        <img src="photos/artProjects/Amur x Psyche /coverAmur.jpg" alt="artProjects 1" loading="lazy"
+                            class="cover-image pidoras">
+                        <img src="photos/artProjects/Amur x Psyche /hoverAmur.jpg" alt="artProjects 2" loading="lazy"
+                            class="hover-image">
+                    </div>
+
+
+
+                </div>
             </div>
 
+            <div class="project-name-horizontal" >
+               art of self-portrait
+            </div>
 
-         <!-- KOLONKA -->
+            <div class="gallery-container">
+                <div class="photo-column">
 
-            <div class="photo-column">
-                <div id="goneWithTheWind" class="gallery-cover">
-                    <img src="photos/artProjects/GoneWithThe Wind/coverWind.jpeg" alt="artProjects 1" loading="lazy"
-                        class="cover-image pidoras">
-                    <img src="photos/artProjects/GoneWithThe Wind/hoverWind.jpeg" alt="artProjects 2" loading="lazy"
-                        class="hover-image ">
-                </div>
-
-                <div id="amurxPsyche" class="gallery-cover">
-                    <img src="photos/artProjects/Amur x Psyche /coverAmur.jpg" alt="artProjects 1" loading="lazy" 
-                    class="cover-image pidoras">
-                    <img src="photos/artProjects/Amur x Psyche /hoverAmur.jpg" alt="artProjects 2" loading="lazy" 
-                    class="hover-image">
-                </div>
-
-
-                <div id="enterTheVoid" class="gallery-cover ">
-                    <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects 1" loading="lazy"
-                        class="cover-image pidoras">
-                    <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects 2" loading="lazy"
-                        class="hover-image ">
+                    <div id="enterTheVoid" class="gallery-cover ">
+                        <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects 1" loading="lazy"
+                            class="cover-image pidoras">
+                        <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects 2" loading="lazy"
+                            class="hover-image ">
+                    </div>
+                    <div id="sun" class="gallery-cover ">
+                        <img src="photos/artProjects/Sun/23809D3C-5786-4B36-ADCC-A44E2EE89FAC.JPG"  style="height: 666px;" alt="artProjects 1" loading="lazy"
+                            class="cover-image pidoras">
+                        <img src="photos/artProjects/Sun/32D88A6C-5521-479A-A0ED-2200A3E90629.JPG" style="height: 666px;" alt="artProjects 2" loading="lazy"
+                            class="hover-image ">
+                    </div>
                 </div>
 
                 <div class="photo-column">
+                                        
+                    <div id="blossomingSoul" class="gallery-cover">
+                        <img src="photos/artProjects/Blossoming soul/Screenshot 2024-02-28 at 17.42.44.png" alt="artProjects 1" loading="lazy"
+                            class="cover-image pidoras">
+                        <img src="photos/artProjects/Blossoming soul/Screenshot 2024-02-28 at 17.41.15.png" alt="artProjects 2" loading="lazy"
+                            class="hover-image ">
+                    </div>
                     <div id="blueRoom" class="gallery-cover">
                         <img src="photos/artProjects/blueRoom/coverBlueRoom.jpg" alt="artProjects 1" loading="lazy"
                             class="cover-image pidoras">
                         <img src="photos/artProjects/blueRoom/hoverBlueRoom.jpg" alt="artProjects 2" loading="lazy"
                             class="hover-image ">
                     </div>
-                </div>
 
+                    <div id="handOfGod" class="gallery-cover">
+                        <!-- ковер з окремим стилем бо картинка квадратна -->
+                        <img src="photos/artProjects/handOfGod/cover.jpg" style="padding-bottom: 166px;"
+                            alt="artProjects 1" loading="lazy" class="cover-image pidoras">
+                        <img src="photos/artProjects/handOfGod/1copy.jpg" alt="artProjects 2" loading="lazy"
+                            class="hover-image ">
+                    </div>
+                </div>
 
             </div>
 
@@ -160,8 +358,6 @@
 
         </div>
 
-
-
     </main>
 
     <footer>
@@ -169,9 +365,10 @@
     </footer>
 
 
-
+    <!------------------------------------------------------------------------------ -->
     <!-- ----------------Gallery------------------- -->
-     <!-- ART -->
+
+    <!-- ART -->
     <div id="rubikFolder" class="gallery-popup" style="display: none;">
         <!-- Галерея зображень тут -->
         <div class="gallery-content">
@@ -199,8 +396,8 @@
 
     <div id="moveFolder" class="gallery-popup" style="display: none;">
         <div class="gallery-content">
-            <div class="gallery-container">              
-                  <div class="photo-column">
+            <div class="gallery-container">
+                <div class="photo-column">
                     <img src="photos/artProjects/Move/coverMove.jpg" alt="artProjects 2" loading="lazy"
                         class="gallery-popup-item">
                     <img src="photos/artProjects/Move/2.jpg" alt="artProjects 2" loading="lazy"
@@ -217,11 +414,11 @@
                 <div class="project-name">
                     <span>M</span>
                     <span>O</span>
-                    <span>V</span> 
-                    <span>E</span> 
+                    <span>V</span>
+                    <span>E</span>
                 </div>
-                
-                
+
+
                 <div class="photo-column">
                     <img src="photos/artProjects/Move/7.jpg" alt="artProjects 2" loading="lazy"
                         class="gallery-popup-item">
@@ -260,8 +457,8 @@
                 <div class="project-name">
                     <span>GONE</span>
                     <span>WITH</span>
-                    <span>THE</span> 
-                    <span>WIND</span> 
+                    <span>THE</span>
+                    <span>WIND</span>
                 </div>
                 <div class="photo-column">
                     <img src="photos/artProjects/GoneWithThe Wind/2.jpeg" alt="artProjects 2" loading="lazy"
@@ -282,7 +479,7 @@
         <span class="close-btn" onclick="closeGallery('goneWithTheWindFolder')">&times;</span>
 
     </div>
-         
+
     <div id="amurxPsycheFolder" class="gallery-popup" style="display:none;">
         <div class="gallery-content">
             <div class="gallery-container">
@@ -295,7 +492,9 @@
                     <span>M</span>
                     <span>U</span>
                     <span>R</span>
+                    <span>&nbsp;</span>
                     <span>x</span>
+                    <span>&nbsp;</span>
                     <span>P</span>
                     <span>S</span>
                     <span>Y</span>
@@ -314,14 +513,29 @@
 
 
 
-    <div id="enterTheVoidFolder" class="gallery-popup align-center" style="display:none;">
+    <div id="enterTheVoidFolder" class="gallery-popup" style="display:none;">
         <div class="gallery-content">
             <div class="gallery-container ">
                 <div class="photo-column mainingrid">
                     <img src="photos/artProjects/enterTheVoid/1.jpg" alt="artProjects " loading="lazy"
                         class="gallery-popup-item">
                 </div>
-                
+                <div class="project-name">
+                    <span>E</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>&nbsp;</span>
+                    <span>T</span>
+                    <span>H</span>
+                    <span>E</span>
+                    <span>&nbsp;</span>
+                    <span>V</span>
+                    <span>O</span>
+                    <span>I</span>
+                    <span>D</span>
+                </div>
                 <div class="photo-column mainingrid">
                     <img src="photos/artProjects/enterTheVoid/2.jpg" alt="artProjects " loading="lazy"
                         class="gallery-popup-item">
@@ -331,28 +545,55 @@
         <span class="close-btn" onclick="closeGallery('enterTheVoidFolder')">&times;</span>
     </div>
 
+    <div id="doomsdayManFolder" class="gallery-popup" style="display:none;">
+        <div class="gallery-content">
+            <div class="gallery-container">
+                <div class="photo-column">
+                    <img src="photos/artProjects/DoomsdayMan/2.jpg" alt="artProjects" loading="lazy"
+                        class="gallery-popup-item">
+                    <img src="photos/artProjects/DoomsdayMan/coverDoom.jpeg" alt="artProjects" loading="lazy"
+                        class="gallery-popup-item">
+                </div>
+                <div class="project-name">
+                    <span>D</span>
+                    <span>O</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>S</span>
+                    <span>D</span>
+                    <span>A</span>
+                    <span>Y</span>
+                    <span>&nbsp;</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>N</span>
 
-    <div id="handOfGodFolder" class="gallery-popup" style="display:none;">
-        <div class="gallery-content">   
-                     <div class="project-name" style="height: 3vh; padding-top: 10px;" > 
-                        <span>HAM of DOG</span>
-                     </div>
-            <div class="gallery-container">              
-                <div class="mainingrid hui">
-                    <img src="photos/artProjects/handOfGod/1.jpg" alt="artProjects " loading="lazy"
+                </div>
+                <div class="photo-column">
+                    <img src="photos/artProjects/DoomsdayMan/3.jpg" alt="artProjects" loading="lazy"
+                        class="gallery-popup-item">
+                    <img src="photos/artProjects/DoomsdayMan/hoverDoom.jpg" alt="artProjects" loading="lazy"
                         class="gallery-popup-item">
                 </div>
             </div>
-            <!-- <div class="project-name"> 
-                <span>H</span>
-                <span>A</span>
-                <span>N</span>
-                <span>D</span>
-                <span>of</span>
-                <span>G</span>
-                <span>O</span>
-                <span>D</span>
-          </div> -->
+
+        </div>
+        <span class="close-btn" onclick="closeGallery('doomsdayManFolder')">&times;</span>
+
+    </div>
+
+
+    <div id="handOfGodFolder" class="gallery-popup" style="display:none;">
+        <div class="gallery-content">
+            <div class="project-name" style="height: 3vh; padding-top: 10px;">
+                <span>HAM of DOG</span>
+            </div>
+            <div class="gallery-container align-center">
+                <div class="mainingrid hui">
+                    <img src="photos/artProjects/handOfGod/1.jpg" alt="artProjects " loading="lazy"
+                        class="gallery-popup-item mainingrid">
+                </div>
+            </div>
         </div>
         <span class="close-btn" onclick="closeGallery('handOfGodFolder')">&times;</span>
     </div>
@@ -364,7 +605,7 @@
                 <img src="photos/artProjects/blueRoom/coverBlueRoom.jpg" alt="artProjects " loading="lazy"
                     class="gallery-popup-item mainingrid">
             </div>
-            <div class="project-name" style="height: 7vh; padding-top: 10px;">
+            <div class="project-name-horizontal" >
                 <span>BLUE ROOM</span>
             </div>
             <div class="gallery-container ">
@@ -417,12 +658,12 @@
                 <div class="project-name">
                     <span>L</span>
                     <span>O</span>
-                    <span>O</span> 
-                    <span>K</span> 
-                    <span>B</span> 
-                    <span>O</span> 
-                    <span>O</span> 
-                    <span>K</span> 
+                    <span>O</span>
+                    <span>K</span>
+                    <span>B</span>
+                    <span>O</span>
+                    <span>O</span>
+                    <span>K</span>
                 </div>
                 <div class="photo-column">
                     <img src="photos/commercial/lookbook/2.jpeg" alt="commercial" loading="lazy"
