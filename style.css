@@ -5,11 +5,12 @@ body {
     color: rgb(190, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
-.pizda {
+
+/* .pizda {
     background-color: rgb(194, 10, 10);
     color: rgb(40, 234, 215);
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 
 header {
@@ -17,6 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 #brand-name {
     font-weight: bold;
@@ -63,20 +66,21 @@ nav ul li a:hover {
 }
 
 
-.direction-column{
+.direction-column {
     display: flex;
     flex-direction: column;
 }
 
 
 /* ---------------------------------------------------- */
-.photo-column-documentary{
+.photo-column-documentary {
     display: flex;
     flex-direction: column;
     gap: 70px;
     position: relative;
-    width: 600px; 
+    width: 600px;
 }
+
 .gallery-cover-documenrary {
     position: relative;
     cursor: default;
@@ -91,7 +95,8 @@ nav ul li a:hover {
     /* justify-content:left; */
     gap: 40px;
 }
-.photo-column-mini{
+
+.photo-column-mini {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -99,16 +104,19 @@ nav ul li a:hover {
     position: relative;
 
 }
+
 .gallery-cover-mini {
     position: relative;
     cursor: default;
     width: 230px;
     height: auto;
 }
-.one-item-mini{
+
+.one-item-mini {
     padding-top: 30px;
     padding-left: 40px;
 }
+
 /* ----------------------------------------------------- */
 
 
@@ -119,23 +127,25 @@ nav ul li a:hover {
     gap: 40px;
 }
 
-.project-name{
-color: rgb(35 28 19); 
-display: flex; 
-flex-direction: column;
- align-items: center; 
- height: 100vh;
- padding-top: 200px;
+.project-name {
+    color: rgb(35 28 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: 200px;
 }
-.project-name-horizontal{
-    color: rgb(35 28 19); 
-display: flex; 
- /* align-items: center;  */
- justify-content:center;
- height: 3vh;
- padding-top: 5px;
- padding-bottom: 10px;
+
+.project-name-horizontal {
+    color: rgb(35 28 19);
+    display: flex;
+    /* align-items: center;  */
+    justify-content: center;
+    height: 3vh;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
+
 .photo-column {
     display: flex;
     flex-direction: column;
@@ -166,8 +176,8 @@ display: flex;
     /* top: 0; */
     /* left: 0; */
     z-index: -1;
- /* !!!проба нормально поставити гіфку!!!  */
-    width: 0vw;      
+    /* !!!проба нормально поставити гіфку!!!  */
+    width: 0vw;
     position: absolute;
     left: 27%;
 }
@@ -203,13 +213,15 @@ display: flex;
     height: auto;
     /* Переконайтеся, що ця висота достатня для ваших зображень */
 }
-.gallery-cover-rubik{
+
+.gallery-cover-rubik {
     position: relative;
     align-self: center;
     cursor: default;
     width: 900px;
     height: auto;
 }
+
 .gallery-popup {
     overflow-y: auto;
     position: fixed;
@@ -225,7 +237,7 @@ display: flex;
     padding-top: 20px;
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
@@ -239,12 +251,13 @@ display: flex;
     position: relative;
 
 }
+
 /* 158-165 для однієї фотки по центру !  158-165 для однієї фотки по центру */
-.mainingrid{
+.mainingrid {
     width: 530px;
 }
 
-.hui{
+.hui {
     display: flex;
     justify-content: center;
     padding-bottom: 35px;
@@ -260,26 +273,27 @@ display: flex;
     font-size: 35px;
     color: white;
 }
-h2{
-   padding-left: 22%;
+
+h2 {
+    padding-left: 22%;
 }
 
-.contact-links{
+.contact-links {
     display: flex;
-justify-content: center;
-/* align-items: center; */
-padding-top: 270px;
-   
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 270px;
+
 }
 
 
- .contact-icon{
+.contact-icon {
     font-size: 50px;
-    color: rgba(187, 180, 238, 0.285); 
+    color: rgba(187, 180, 238, 0.285);
     margin: 0 40px;
     cursor: pointer;
-   /* ПРИБРАЛА РУХ ІКОНОК В КОНТАКТАХ transition: color 0.3s ease-in-out;*/
-} 
+    /* ПРИБРАЛА РУХ ІКОНОК В КОНТАКТАХ transition: color 0.3s ease-in-out;*/
+}
 
 /* .insta-icon{
     margin-right: 30px;
@@ -307,36 +321,43 @@ padding-top: 270px;
     opacity: 1;
 }
 
-#childhood:hover .cover-image{
+#childhood:hover .cover-image {
     opacity: 0;
 }
+
 #childhood:hover .hover-image {
     opacity: 1;
 }
-#saltLake:hover .cover-image{
+
+#saltLake:hover .cover-image {
     opacity: 0;
 }
+
 #saltLake:hover .hover-image {
     opacity: 1;
 }
 
-#silentSolitude:hover .cover-image{
-    opacity: 0;
-}   
-#silentSolitude:hover .hover-image{
-    opacity: 1;
-}  
-
-#mezha:hover .cover-image{
-    opacity: 0;
-}   
-#mezha:hover .hover-image{
-    opacity: 1;
-}   
-#random:hover .cover-image{
+#silentSolitude:hover .cover-image {
     opacity: 0;
 }
-#random:hover .hover-image{
+
+#silentSolitude:hover .hover-image {
+    opacity: 1;
+}
+
+#mezha:hover .cover-image {
+    opacity: 0;
+}
+
+#mezha:hover .hover-image {
+    opacity: 1;
+}
+
+#random:hover .cover-image {
+    opacity: 0;
+}
+
+#random:hover .hover-image {
     opacity: 1;
 }
 
@@ -368,17 +389,19 @@ padding-top: 270px;
     opacity: 1;
 }
 
-#doomsdayMan:hover .cover-image{
-    opacity:0;
+#doomsdayMan:hover .cover-image {
+    opacity: 0;
 }
-#doomsdayMan:hover .hover-image{
+
+#doomsdayMan:hover .hover-image {
     opacity: 1;
 }
 
-#blossomingSoul:hover .cover-image{
-    opacity:0;
+#blossomingSoul:hover .cover-image {
+    opacity: 0;
 }
-#blossomingSoul:hover .hover-image{
+
+#blossomingSoul:hover .hover-image {
     opacity: 1;
 }
 
@@ -398,10 +421,11 @@ padding-top: 270px;
     opacity: 1;
 }
 
-#amurxPsyche:hover .cover-image{
+#amurxPsyche:hover .cover-image {
     opacity: 0;
 }
-#amurxPsyche:hover .hover-image{
+
+#amurxPsyche:hover .hover-image {
     opacity: 1;
 }
 
@@ -444,6 +468,7 @@ padding-top: 270px;
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -466,44 +491,68 @@ padding-top: 270px;
 }
 
 
-@media only screen and (max-width:750px){
-#brand-name{
-    display: none;
-}
-header{
-    justify-content: space-around;
-}
-#gif-background {
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    /* opacity: 0.9; */
-    height: 100vh;
-    /* width: 100vw;
+@media only screen and (max-width:750px) {
+    #brand-name {
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    #gif-background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        /* opacity: 0.9; */
+        height: 100vh;
+        /* width: 100vw;
     position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    z-index: -1;
- /* !!!проба нормально поставити гіфку!!!  */
-    width: 0vw;      
-    position: absolute;
-   left: 0%;
+        /* top: 0; */
+        /* left: 0; */
+        z-index: -1;
+        /* !!!проба нормально поставити гіфку!!!  */
+        width: 0vw;
+        position: absolute;
+        left: 0%;
 
-}
+    }
 }
 
- /* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
 /* ------------------FOR SMARTPHONES------------------------ */
-@media only screen and (max-width:600px){
-    .cover-image, hover-image {
+@media only screen and (min-width:600px) {
+    .full-screen {
+        display: flex;
+    }
+    .mobile-screen{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .full-screen {
+        display: none;
+    }
+    .mobile-screen{
+        display: block;
+    }
+
+    /* .mobile-screen{
+        display: flex;
+    } */
+
+    .cover-image,
+    hover-image {
         top: 0;
         left: 0;
         width: 100%;
         height: auto;
         object-fit: cover;
         opacity: 1;
-        transition: opacity 3.5s cubic-bezier(0.4, 0, 1, 1);
+        transition: opacity 2.5s cubic-bezier(0.4, 0, 1, 1);
     }
+
     ul {
         /* width: 200px; */
         height: auto;
@@ -519,6 +568,7 @@ header{
         cursor: pointer;
         color: black;
     }
+
     nav ul li {
         margin: 0 5px;
     }
@@ -535,12 +585,12 @@ header{
         font-weight: bold;
         font-size: 10px;
     }
-    
+
     nav ul li a:hover {
         color: grey;
         transition: color 0.3s ease-in-out;
         font-size: 10px;
-    } 
+    }
 
 
     .gallery-container {
@@ -553,50 +603,52 @@ header{
         padding-right: 10px; */
     }
 
-    .project-name{
-        flex-direction:unset;
-        align-items: center; 
+    .project-name {
+        flex-direction: unset;
+        align-items: center;
         height: 6vh;
         padding-top: 0px;
     }
 
     .mainingrid {
-    width:auto;
+        width: auto;
     }
 
 
-.gallery-cover {
-    position: relative;
-    cursor: default;
-    width: 100%;
-    height: 100%;
-    /* Переконайтеся, що ця висота достатня для ваших зображень */
-}
-.gallery-popup {
-    overflow-y: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 1);
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    padding-top: 20px;
-}
-/* .align-center{
+    .gallery-cover {
+        position: relative;
+        cursor: default;
+        width: 100%;
+        height: 100%;
+        /* Переконайтеся, що ця висота достатня для ваших зображень */
+    }
+
+    .gallery-popup {
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 1);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        padding-top: 20px;
+    }
+
+    /* .align-center{
     align-items: center;
 } */
-.gallery-popup-item {
-    max-height: 95%;
-    max-width: 95%;
-}
+    .gallery-popup-item {
+        max-height: 95%;
+        max-width: 95%;
+    }
 
-h2{
-    padding-left: 28%;
- }
+    h2 {
+        padding-left: 28%;
+    }
 
     #gif-background {
         background-size: cover;
@@ -609,14 +661,14 @@ h2{
         /* top: 0; */
         /* left: 0; */
         z-index: -1;
-     /* !!!проба нормально поставити гіфку!!!  */
-        width: 0vw;      
+        /* !!!проба нормально поставити гіфку!!!  */
+        width: 0vw;
         position: absolute;
-       left: -30%;
-   
+        left: -30%;
+
     }
 
-/* .gallery-container{
+    /* .gallery-container{
    display: ;
 } */
 

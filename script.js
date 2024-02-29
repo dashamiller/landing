@@ -6,7 +6,7 @@ function preloadImage(imageUrl) {
     // Ви можете додати логіку для подій 'load' або 'error', якщо потрібно
     img.onload = () => console.log(`Image preloaded: ${imageUrl}`);
 }
-preloadImage('photos/art/1.jpg');
+preloadImage('photos/art/1.jpg' , 'photos/art/underthesnow.jpeg');
 
 
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const hoverImage = cover.querySelector('.hover-image');
                     isVisible = !isVisible;
                     hoverImage.style.opacity = isVisible ? '1' : '0';
-                }, 5500); // Інтервал зміни зображень (5 секунд)
+                }, 4500); // Інтервал зміни зображень (5 секунд)
             });
         }
     }
